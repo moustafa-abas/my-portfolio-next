@@ -10,7 +10,7 @@ const Nav = () => {
   return (
 <nav className=" ">
 
-  <div className="mx-auto  px-2 sm:px-6 lg:px-8 sm:border-2  rounded-2xl md:my-5">
+  <div className="mx-auto  px-2 sm:px-6 lg:px-8 sm:border-2  rounded-2xl ">
     <div className="relative flex h-16 items-center justify-between">
       <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <button type="button" className="  p-2 " aria-controls="mobile-menu" aria-expanded="false" onClick={()=>setOpenMenu(!openMenu)}>

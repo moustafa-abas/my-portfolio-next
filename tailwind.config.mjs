@@ -20,5 +20,7 @@ export default {
         'background-clip': 'text',
       },
     });
-  },],
+
+  },
+],
 };

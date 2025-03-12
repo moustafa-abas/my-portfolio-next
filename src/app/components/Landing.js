@@ -4,7 +4,7 @@ import me from "../assets/IMG-20240117-WA0090.webp";
 const Landing = () => {
   return (
     <div className="flex  justify-between  capitalize items-center">
-      <main className="w-1/2 ">
+      <main className="w-1/2 " data-aos='fade-right'>
         <hgroup>
           <h1 className="gradient sm:text-8xl    text-xl ">
             front-end developer
@@ -23,8 +23,8 @@ const Landing = () => {
           {/* <a href="https://drive.google.com/file/d/1BZcYJlja-osY5M6z2gItiezAz013dh9c/view?usp=sharing" className='w-full' download='mostafa-abas-cv.pdf' target="_blank"> download cv</a> */}
         </button>
       </main>
-      <aside className="w-1/2 ">
-        <Image src={me} alt="my photo "  />
+      <aside className="w-1/2 " data-aos='zoom-in'>
+        <Image src={me} alt="my photo " priority />
       </aside>
     </div>
   );

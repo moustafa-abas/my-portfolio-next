@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --background: rgba(128, 128, 128, 0.607);
-  --foreground: linear-gradient(to right,  #0c253f, #1F618D );;
+  --background: #fff;
+  /* --foreground: linear-gradient(to right,  #0c253f, #1F618D );; */
+  --foreground: linear-gradient(to right,  #0c253f, #3e7da7 );;
 
 }
 .dark body{
@@ -28,6 +28,7 @@ border-radius: 20px;
   background: var(--foreground);
 }
 body {
+
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
