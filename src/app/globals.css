@@ -3,17 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: rgba(128, 128, 128, 0.607);
+  --foreground: linear-gradient(to right,  #0c253f, #1F618D );;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
+.dark body{
 
+  --background: #0a0a0a;
+  --foreground: linear-gradient(to right, #f733bc,rgb(93, 150, 248) );;
+
+}
+.gradient{
+@apply text-transparent  bg-clip-text ;
+-webkit-background-clip: text;
+background-image: var(--foreground);
+width: fit-content;
+}
+.border-gradient{
+  @apply  border  ;
+  border-image: var(--foreground) 1;
+border-radius: 20px;
+}
+.background{
+  background: var(--foreground);
+}
 body {
   color: var(--foreground);
   background: var(--background);
