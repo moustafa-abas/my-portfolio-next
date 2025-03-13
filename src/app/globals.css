@@ -27,6 +27,9 @@ border-radius: 20px;
 .background{
   background: var(--foreground);
 }
+.Container{
+  @apply mx-3 sm:mx-10 lg:mx-24 ;
+}
 body {
 
   color: var(--foreground);

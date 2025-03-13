@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import 'aos/dist/aos.css';  // استيراد الأنماط الخاصة بـ AOS
 import AOS from 'aos';  // استيراد AOS
 import { useEffect } from "react";
+import Skills from "./components/Skills";
 export default function Home() {
 
     useEffect(() => {
@@ -17,10 +18,13 @@ export default function Home() {
     }, []);
   return (
 
- <main className="mx-3 sm:mx-10 lg:mx-24 sm:pt-5 " >
+ <main className="sm:pt-5 " >
+
 <Nav/>
 <Landing/>
 <Services/>
+
+<Skills/>
 <FaArrowDown className="animate-bounce sticky bottom-7 mx-auto  "/>
 
  </main>

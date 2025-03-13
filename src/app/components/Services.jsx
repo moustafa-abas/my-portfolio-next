@@ -40,8 +40,8 @@ const items = [
 },
 ];
 return (
-<main className="capitalize mt-10 ">
-    <h1 className="text-5xl gradient mx-auto mb-24" data-aos="zoom-in ">
+<main className=" mt-10 Container ">
+    <h1 className="text-5xl gradient font-bold mx-auto mb-24 uppercase" data-aos="zoom-in ">
     my services
     </h1>
     {items?.map((item) => (
@@ -51,11 +51,11 @@ return (
         data-aos={item.fade}
     >
         <hgroup>
-        <h1 className="flex items-center gap-4 text-3xl ">
-            {item.icon}{" "}
+        <h1 className="flex items-center gap-4 text-3xl capitalize">
+            {item.icon}
             <span className="gradient font-bold">{item.title}</span>
         </h1>
-        <p className="mt-4 tracking-wider leading-8">{item.content}</p>
+        <p className="mt-4 tracking-wider leading-8 first-letter:capitalize">{item.content}</p>
         </hgroup>
     </div>
     ))}
