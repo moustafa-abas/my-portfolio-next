@@ -1,20 +1,21 @@
 import React from "react";
-import html from "../assets/HTML5.png";
-import css from "../assets/CSS3.png";
+import html from "../assets/HTML5.webp";
+import css from "../assets/CSS3.webp";
 import js from "../assets/JavaScript.png";
-import bootstrap from "../assets/Bootstrap.png";
+import bootstrap from "../assets/Bootstrap.webp";
 import Tailwind from "../assets/Tailwind CSS.png";
 import sass from "../assets/Sass.png";
 import react from "../assets/React.png";
-import Vite from "../assets/Vite.js.png";
+import Vite from "../assets/Vite.js.webp";
 import next from "../assets/Next.js.png";
 import Axios from "../assets/Axios.png";
-import Figma from "../assets/Figma.png";
+import Figma from "../assets/Figma.webp";
 import NPM from "../assets/NPM.png";
 import Postman from "../assets/Postman.png";
 import Redux from "../assets/Redux.png";
 import Image from "next/image";
 import Heading from "./Heading";
+
 const Skills = () => {
   const all = [
     {
@@ -76,7 +77,6 @@ const Skills = () => {
   ];
   return (
     <main className="  border-y my-24 py-16 text-center" data-aos="fade-up" id="skills">
-
     <Heading name='skills'/>
 
       <p className="my-10 capitalize sm:text-3xl ">
@@ -91,6 +91,7 @@ const Skills = () => {
             data-aos-duration="1000"
             data-aos-delay={skill.time}
             data-aos="zoom-out"
+            loading="lazy"
           />
         ))}
       </section>

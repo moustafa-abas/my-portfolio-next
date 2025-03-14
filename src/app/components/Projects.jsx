@@ -1,16 +1,15 @@
-"use client";
 import React, { useEffect, useState } from "react";
-import Heading from "./Heading";
 import Image from "next/image";
-import quiz from "../assets/quiz-app.jpg";
-import crud from "../assets/crud.png";
+import { LuSquareArrowOutUpRight } from "react-icons/lu";
+import Heading from "./Heading";
+import quiz from "../assets/quiz-app.webp";
+import crud from "../assets/crud.webp";
 import portfolio from "../assets/old-portfolio.webp";
 import atc from "../assets/atc.webp";
 import car from "../assets/car rental.webp";
 import elipso from "../assets/elipso.webp";
 import resturant from "../assets/resturant.webp";
 import e_commerce from "../assets/e-commerce.webp";
-import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 const Projects = () => {
   const Projects = [
@@ -172,6 +171,7 @@ const Projects = () => {
                 src={project.src}
                 alt="project image"
                 className="w-full rounded-lg md:rounded-2xl border   "
+                loading="lazy"
               />
             </a>
           </div>

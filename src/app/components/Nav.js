@@ -4,7 +4,6 @@ import { MdLightMode } from "react-icons/md";
 import { CiDark } from "react-icons/ci";
 import { useState } from "react";
 const Nav = (data) => {
-  console.log(data);
   const { theme, setTheme } = useTheme();
   const [openMenu, setOpenMenu] = useState(false);
   const [currentSection, setCurrentSection] = useState("home");

@@ -1,16 +1,18 @@
 import Image from "next/image";
 import React from "react";
+
 import me from "../assets/IMG-20240117-WA0090.webp";
 import facebook from "../assets/facebook.webp";
 import whats from "../assets/whats.webp";
 import linkedin from "../assets/linkedin.webp";
+
 const Landing = () => {
   return (
     <div
       className="flex  justify-between  capitalize items-center Container pt-10 sm:pt-0 "
       id="home"
     >
-      <main className="w-1/2 " data-aos="fade-right">
+      <main className="w-1/2 " >
         <hgroup>
           <h1 className="gradient sm:text-8xl   text-xl ">
             front-end developer
@@ -26,7 +28,7 @@ const Landing = () => {
               target="_blank"
               href="https://www.facebook.com/mostafa.abas8?mibextid=ZbWKwL"
             >
-              <Image
+              <Image loading="lazy"
                 src={facebook}
                 alt="what's app icon"
                 className="w-7 sm:w-9"
@@ -35,7 +37,7 @@ const Landing = () => {
           </button>
           <button>
             <a target="_blank" href="https://wa.me/+201280163605?">
-              <Image src={whats} alt="what's app icon" className="w-7 sm:w-9" />
+              <Image loading="lazy" src={whats} alt="what's app icon" className="w-7 sm:w-9" />
             </a>
           </button>
           <button>
@@ -43,7 +45,7 @@ const Landing = () => {
               target="_blank"
               href="https://www.linkedin.com/in/mostafa-abas-989585341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             >
-              <Image
+              <Image loading="lazy"
                 src={linkedin}
                 alt="what's app icon"
                 className="w-7 sm:w-9"
@@ -63,7 +65,7 @@ const Landing = () => {
           </a>
         </button>
       </main>
-      <aside className="w-1/2 " data-aos="zoom-in">
+      <aside className="w-1/2 " data-aos="fade-up">
         <Image src={me} alt="my photo " priority />
       </aside>
     </div>
