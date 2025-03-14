@@ -41,7 +41,7 @@ const items = [
 },
 ];
 return (
-<main className=" mt-10 Container " id="services">
+<main className="  Container section" id="services" >
     
     <Heading name='my services'/>
 

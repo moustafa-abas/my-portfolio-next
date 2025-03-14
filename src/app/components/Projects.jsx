@@ -80,7 +80,7 @@ const Projects = () => {
       src: car,
       link: "https://car-rental-ashy.vercel.app/",
       name: "car rental",
-      title: "it Looks like landing page (not enter active).",
+      title: "it Looks like landing page ( Non-interactive).",
       tools: [
         "html",
         "css",
@@ -93,7 +93,7 @@ const Projects = () => {
       src: elipso,
       link: "https://elipso-project.vercel.app/",
       name: "elipso community",
-      title: "it Looks like landing page (not enter active).",
+      title: "it Looks like landing page (Non-interactive).",
       tools: [
         "html",
         "css",
@@ -106,7 +106,7 @@ const Projects = () => {
       src: resturant,
       link: "https://restaurant-kohl-tau.vercel.app/",
       name: "omani food",
-      title: "it Looks like landing page (not enter active).",
+      title: "it Looks like landing page (Non-interactive).",
       tools: [
         "html",
         "css",
@@ -138,14 +138,14 @@ const Projects = () => {
         );
   }, [filter]);
   return (
-    <main className="Container " id="projects">
+    <main className="Container section" id="projects">
       <Heading name="projects" />
       <section className="flex flex-wrap sm:justify-center gap-3 sm:gap-6 ">
         {filters.map((one, index) => (
           <button
             key={index}
             className={`capitalize ${
-              filter === `${one}` ? "" : "background text-white"
+              filter === `${one}` ? "" : "background "
             } px-4 py-1 rounded-2xl`}
             onClick={() => setFilter(one)}
           >
@@ -181,14 +181,14 @@ const Projects = () => {
             data-aos="fade-right"
             data-aos-delay="500"
           >
-            <h1 className="text-5xl gradient mx-auto">{project.name}</h1>
+            <h1 className="text-5xl gradient mx-auto sm:mx-0">{project.name}</h1>
             <p className="my-8 text-lg md:tracking-wider md:leading-7">
               {project.title}
             </p>
             <div className="flex  gap-2 md:gap-4 flex-wrap">
               {project.tools.map((one, index) => (
                 <span
-                  className="background px-4  rounded-2xl text-xl text-white"
+                  className="background px-4  rounded-2xl text-xl"
                   key={index}
                 >
                   {one}

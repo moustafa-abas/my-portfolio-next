@@ -24,7 +24,6 @@ export default function Home() {
 <Nav/>
 <Landing/>
 <Services/>
-
 <Skills/>
 <Projects/>
 <FaArrowDown className="animate-bounce sticky bottom-7 mx-auto  "/>
