@@ -30,6 +30,9 @@ border-radius: 20px;
 .Container{
   @apply mx-3 sm:mx-10 lg:mx-24 ;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
 
   color: var(--foreground);

@@ -3,8 +3,8 @@ import React from "react";
 import me from "../assets/IMG-20240117-WA0090.webp";
 const Landing = () => {
   return (
-    <div className="flex  justify-between  capitalize items-center Container">
-      <main className="w-1/2 " data-aos='fade-right'>
+    <div className="flex  justify-between  capitalize items-center Container" id="home">
+      <main className="w-1/2 " data-aos='fade-right' >
         <hgroup>
           <h1 className="gradient sm:text-8xl    text-xl ">
             front-end developer

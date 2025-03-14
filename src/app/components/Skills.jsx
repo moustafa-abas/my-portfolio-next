@@ -14,6 +14,7 @@ import NPM from "../assets/NPM.png";
 import Postman from "../assets/Postman.png";
 import Redux from "../assets/Redux.png";
 import Image from "next/image";
+import Heading from "./Heading";
 const Skills = () => {
   const all = [
     {
@@ -74,16 +75,16 @@ const Skills = () => {
     },
   ];
   return (
-    <main className="  border-y my-24 py-16 text-center" data-aos="fade-up">
-      <h1 className="text-5xl gradient font-bold mx-auto  uppercase ">
-        skills
-      </h1>
+    <main className="  border-y my-24 py-16 text-center" data-aos="fade-up" id="skills">
+
+    <Heading name='skills'/>
+
       <p className="my-10 capitalize sm:text-3xl ">
         the skills, tools and technologies i use :
       </p>
       <section className="flex items-center justify-center sm:w-3/4 mx-auto flex-wrap gap-8">
-        {all.map((skill) => (
-          <Image
+        {all.map((skill, index) => (
+          <Image key={index}
             src={skill.name}
             alt="skill"
             className="w-1/4 sm:w-24"

@@ -3,6 +3,7 @@ import { FaCode } from "react-icons/fa";
 import { IoIosLaptop } from "react-icons/io";
 import { IoBagCheck } from "react-icons/io5";
 import { CgSupport } from "react-icons/cg";
+import Heading from "./Heading";
 
 const Services = () => {
 const items = [
@@ -40,10 +41,10 @@ const items = [
 },
 ];
 return (
-<main className=" mt-10 Container ">
-    <h1 className="text-5xl gradient font-bold mx-auto mb-24 uppercase" data-aos="zoom-in ">
-    my services
-    </h1>
+<main className=" mt-10 Container " id="services">
+    
+    <Heading name='my services'/>
+
     {items?.map((item) => (
     <div
         key={item.title}

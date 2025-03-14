@@ -8,7 +8,7 @@ const Nav = () => {
   const [openMenu,setOpenMenu]=useState(false)
 
   return (
-<nav className=" Container  ">
+<nav className=" Container sticky z-10 top-0  ">
 
   <div className="mx-auto  px-2 sm:px-6 lg:px-8 sm:border-2  rounded-2xl ">
     <div className="relative flex h-16 items-center justify-between">
@@ -26,7 +26,7 @@ const Nav = () => {
         <div className="hidden sm:ml-6 sm:block">
           <div className="flex space-x-4">
             { /* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */ }
-            <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white " aria-current="page">home</a>
+            <a href="#projects" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white " aria-current="page">home</a>
             <a href="#" className="rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white ">services</a>
             <a href="#" className="rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white ">Projects</a>
             <a href="#" className="rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white ">technologies</a>

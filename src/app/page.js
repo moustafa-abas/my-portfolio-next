@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';  // استيراد الأنماط الخاصة بـ A
 import AOS from 'aos';  // استيراد AOS
 import { useEffect } from "react";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 export default function Home() {
 
     useEffect(() => {
@@ -25,6 +26,7 @@ export default function Home() {
 <Services/>
 
 <Skills/>
+<Projects/>
 <FaArrowDown className="animate-bounce sticky bottom-7 mx-auto  "/>
 
  </main>
