@@ -26,7 +26,6 @@ const Nav = () => {
   }, [window.scrollY]);
 
   var sections = ["home", "services", "skills", "projects"];
-  console.log(currentSection);
 
   return (
     <nav className="  sticky z-10 top-0 Container bg-background ">
