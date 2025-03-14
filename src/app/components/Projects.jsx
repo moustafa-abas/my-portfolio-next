@@ -146,7 +146,7 @@ const Projects = () => {
             key={index}
             className={`capitalize ${
               filter === `${one}` ? "" : "background "
-            } px-4 py-1 rounded-2xl`}
+            } px-4 py-1 rounded-md`}
             onClick={() => setFilter(one)}
           >
             {one}

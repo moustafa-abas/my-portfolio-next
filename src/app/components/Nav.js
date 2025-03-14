@@ -3,33 +3,21 @@ import { useTheme } from "next-themes";
 import { MdLightMode } from "react-icons/md";
 import { CiDark } from "react-icons/ci";
 import { useState } from "react";
-const Nav = () => {
+const Nav = (data) => {
+  console.log(data);
   const { theme, setTheme } = useTheme();
   const [openMenu, setOpenMenu] = useState(false);
   const [currentSection, setCurrentSection] = useState("home");
 
   useEffect(() => {
-    const services = document.getElementById("services")?.offsetTop;
-    const projects = document.getElementById("projects")?.offsetTop;
-    const skills = document.getElementById("skills")?.offsetTop;
-    window.onscroll = function () {
-      if (window.scrollY >= projects - 200) {
-        setCurrentSection("projects");
-      } else if (window.scrollY >= skills - 200) {
-        setCurrentSection("skills");
-      } else if (window.scrollY >= services - 200) {
-        setCurrentSection("services");
-      } else {
-        setCurrentSection("home");
-      }
-    };
-  }, [window.scrollY]);
+    setCurrentSection(data.currentSection);
+  }, [data]);
 
   var sections = ["home", "services", "skills", "projects"];
 
   return (
-    <nav className="  sticky z-10 top-0 Container bg-background ">
-      <div className="mx-auto  px-2 sm:px-6 lg:px-8 sm:border border-gray-700  rounded-2xl  ">
+    <nav className="  sticky z-20 top-0  bg-background ">
+      <div className="mx-auto  px-2 sm:px-6 lg:px-8 sm:border border-gray-700  rounded-2xl Container ">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
@@ -90,7 +78,7 @@ const Nav = () => {
       </div>
       {openMenu ? (
         <div className="sm:hidden " id="mobile-menu">
-          <div className="space-y- px-2 pt-2 pb-3 ">
+          <div className="space-y-1 px-2 pt-2 pb-3 ">
             {sections.map((section, index) => (
               <a
                 key={index}
