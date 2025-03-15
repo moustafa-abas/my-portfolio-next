@@ -76,7 +76,7 @@ const Skills = () => {
     },
   ];
   return (
-    <main className="  border-y my-24 py-16 text-center" data-aos="fade-up" id="skills">
+    <main className="  sm:border-y mt-12 pb-10 text-center" data-aos="fade-up" id="skills">
     <Heading name='skills'/>
 
       <p className="my-10 capitalize sm:text-3xl ">
