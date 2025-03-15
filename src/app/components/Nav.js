@@ -20,6 +20,7 @@ const Nav = (data) => {
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
+            accessKey="open menu"
               type="button"
               className="  p-2 "
               aria-controls="mobile-menu"
@@ -62,6 +63,7 @@ const Nav = (data) => {
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <button
+            accessKey="dark/light"
               type="button"
               className="  rounded-full  bg-gray-800 p-2 text-gray-400 hover:text-white"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

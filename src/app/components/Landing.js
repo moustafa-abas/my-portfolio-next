@@ -22,7 +22,7 @@ const Landing = () => {
             <span className="gradient sm:text-4xl text-xl">mostafa abas</span>
           </p>
         </hgroup>
-        <div className="flex gap-5 mt-5 ">
+        <div className="flex gap-5 sm:gap-8 mt-5 ">
           <button>
             <a
               target="_blank"
@@ -31,13 +31,13 @@ const Landing = () => {
               <Image loading="lazy"
                 src={facebook}
                 alt="what's app icon"
-                className="w-7 sm:w-9"
+                className="w-10 sm:w-12"
               />
             </a>
           </button>
           <button>
             <a target="_blank" href="https://wa.me/+201280163605?">
-              <Image loading="lazy" src={whats} alt="what's app icon" className="w-7 sm:w-9" />
+              <Image loading="lazy" src={whats} alt="what's app icon" className="w-10 sm:w-12" />
             </a>
           </button>
           <button>
@@ -48,7 +48,7 @@ const Landing = () => {
               <Image loading="lazy"
                 src={linkedin}
                 alt="what's app icon"
-                className="w-7 sm:w-9"
+                className="w-10 sm:w-12"
               />
             </a>
           </button>

@@ -142,6 +142,7 @@ const Projects = () => {
       <section className="flex flex-wrap sm:justify-center gap-3 sm:gap-6 ">
         {filters.map((one, index) => (
           <button
+          accessKey={one}
             key={index}
             className={`capitalize ${
               filter === `${one}` ? "" : "background "
