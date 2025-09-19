@@ -56,8 +56,8 @@ const Landing = () => {
         <button className=" background   rounded-3xl   w-fit  sm:mt-8  h-10 sm:h-12  mt-5 sm:text-xl ">
           <a
             download="mostafa-abas-cv.pdf"
-            href="https://drive.google.com/uc?export=download&id=1BZcYJlja-osY5M6z2gItiezAz013dh9c
-"
+            href="https://drive.google.com/file/d/1ft8_czuT0-TmUUkW3m294CNnLeOB92K0/view?usp=drive_link
+            "
             className=" capitalize p-4   "
             target="_blank"
           >
