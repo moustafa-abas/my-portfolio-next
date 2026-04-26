@@ -3,7 +3,7 @@ import Image from "next/image";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import Heading from "./Heading";
 import quiz from "../assets/quiz-app.webp";
-import crud from "../assets/crud.webp";
+import studentSystem from "../assets/studentSystem.webp";
 import portfolio from "../assets/old-portfolio.webp";
 import atc from "../assets/atc.webp";
 import car from "../assets/car rental.webp";
@@ -14,9 +14,9 @@ import e_commerce from "../assets/e-commerce.webp";
 const Projects = () => {
   const Projects = [
     {
-      src: crud,
-      link: "https://my-crud-system.vercel.app/",
-      name: "crud",
+      src: studentSystem,
+      link: "https://students-system-eta.vercel.app/",
+      name: "Student System",
       title:
         "students information system to add, update and delete students data in an organization like a school, college...",
       tools: [
@@ -26,6 +26,10 @@ const Projects = () => {
         "react hook form",
         "react icons",
         "responsive",
+        "node js",
+        "MongoDB ",
+    "MERN STACK"
+        
       ],
     },
     {
@@ -126,6 +130,7 @@ const Projects = () => {
     "next",
     "responsive",
     "no responsive",
+    "MERN STACK"
   ];
   const [projects, setProjects] = useState();
   const [filter, setFilter] = useState("all");

@@ -13,6 +13,8 @@ import Figma from "../assets/Figma.webp";
 import NPM from "../assets/NPM.png";
 import Postman from "../assets/Postman.png";
 import Redux from "../assets/Redux.png";
+import node from "../assets/node.png";
+import mongoDB from "../assets/mongoDB.png";
 import Image from "next/image";
 import Heading from "./Heading";
 
@@ -73,6 +75,14 @@ const Skills = () => {
     {
       name: Redux,
       time: "2700",
+    },
+    {
+      name: node,
+      time: "2900",
+    },
+    {
+      name: mongoDB,
+      time: "3000",
     },
   ];
   return (
